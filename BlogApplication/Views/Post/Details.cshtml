@@ -1,0 +1,97 @@
+﻿@model BlogApplication.Models.Post
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App - Post Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        .table {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .table thead th {
+                background-color: #343a40;
+                color: #fff;
+                font-weight: bold;
+                border-color: #454d55;
+            }
+
+            .table td, .table th {
+                border-color: #dee2e6;
+                padding: 1rem;
+            }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+            }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+            .btn-secondary:hover {
+                background-color: #5a6268;
+                border-color: #545b62;
+            }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 class="display-4 mb-4"><span style="font-style: italic;">Post Details</span></h1>
+        <hr />
+        <div class="table-responsive">
+            <table id="PostTable" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th><span style="font-style: italic;">@Html.DisplayNameFor(model => model.Title)</span></th>
+                        <th><span style="font-style: italic;">@Html.DisplayNameFor(model => model.Category.Name)</span></th>
+                        <th><span style="font-style: italic;">@Html.DisplayNameFor(model => model.Author.Username)</span></th>
+                        <th><span style="font-style: italic;">@Html.DisplayNameFor(model => model.Content)</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span style="font-style: italic;">@Html.DisplayFor(model => model.Title)</span></td>
+                        <td><span style="font-style: italic;">@Html.DisplayFor(model => model.Category.Name)</span></td>
+                        <td><span style="font-style: italic;">@Html.DisplayFor(model => model.Author.Username)</span></td>
+                        <td><span style="font-style: italic;">@Html.DisplayFor(model => model.Content)</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <a class="btn btn-secondary" asp-action="Index">Back to List</a>
+        </div>
+    </div>
+</body>
+</html>

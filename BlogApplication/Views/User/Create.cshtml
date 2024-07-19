@@ -1,0 +1,62 @@
+﻿@model BlogApplication.Models.User
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h1 class="display-5 text-center mb-4">Create User</h1>
+                    <form asp-action="Create" method="post" enctype="multipart/form-data" class="text-center">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="Username" class="control-label text-muted font-italic">Username</label>
+                            <input asp-for="Username" class="form-control" />
+                            <span asp-validation-for="Username" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Password" class="control-label text-muted font-italic">Password</label>
+                            <input asp-for="Password" type="password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Email" class="control-label text-muted font-italic">Email</label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="UserImageFile" class="control-label"><span style="font-style: italic;">User Image</span></label>
+                            <input asp-for="UserImageFile" type="file" class="form-control-file" />
+                            <span asp-validation-for="UserImageFile" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Create</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (ViewBag.Message != "")
+{
+    <div class="alert alert-success text-center mb-4" role="alert">
+        @ViewBag.Message
+    </div>
+}
+@if (ViewBag.userId != -1)
+{
+    <div class="text-center">
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

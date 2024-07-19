@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar {
+            background-color: transparent;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-right: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+            .navbar-nav .nav-link:hover {
+                color: #007bff;
+            }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .hero h1 {
+                font-size: 3rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            .hero p {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .hero .buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            margin-bottom: 1rem;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+            }
+
+        .statistics {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 1.2rem;
+            width: 300px;
+            color: #333;
+            text-shadow: none;
+        }
+
+            .statistics p {
+                margin-bottom: 0.5rem;
+            }
+    </style>
+</head>
+<body>
+
+
+    <div class="hero">
+        <div class="container text-center">
+            <h1>Welcome to Blog App</h1>
+            <p>Discover and share your thoughts with the world.</p>
+            @if (ViewBag.userId == -1)
+            {
+                <div class="buttons">
+                    <a class="btn btn-primary btn-lg" asp-area="" asp-controller="User" asp-action="Login">Log in</a>
+                    <a class="btn btn-primary btn-lg" asp-area="" asp-controller="User" asp-action="Create">Create an account</a>
+                </div>
+                <!-- Wrap the statistics div in a container to use Bootstrap's grid system -->
+                <div class="container">
+                    <div class="statistics mx-auto" style="max-width: 300px;">
+                        <!-- Apply mx-auto and specify max-width -->
+                        <p>Total Posts: @ViewBag.Posts</p>
+                        <p>Total Comments: @ViewBag.Comments</p>
+                        <p>Active Users: @ViewBag.Users</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>

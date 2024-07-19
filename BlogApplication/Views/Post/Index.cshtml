@@ -1,0 +1,255 @@
+﻿@model IEnumerable<BlogApplication.Models.Post>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App - Posts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Your existing styles here */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        .post {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .scrollable-container {
+            max-height: calc(100vh - 150px); /* Adjust the 150px value based on the height of your header and footer */
+            overflow-y: auto;
+        }
+        .post-img img {
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+            height: auto;
+        }
+
+        .author-info {
+            background-color: #2c3840;
+            color: #fff;
+            padding: 1rem;
+            border-radius: 0 0 10px 10px;
+        }
+
+            .author-info ul li {
+                display: inline-block;
+                margin-right: 1rem;
+            }
+
+        .caption {
+            padding: 1.5rem;
+        }
+
+        .centered-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+            .caption h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .caption p {
+                font-size: 1rem;
+                line-height: 1.5;
+                margin-bottom: 1rem;
+            }
+
+        .btn-default {
+            background-color: #007bff;
+            color: #fff;
+            border-color: #007bff;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+            .btn-default:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+            }
+
+        .pagination-wrap {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .pagination > li > a,
+        .pagination > li > span {
+            color: #007bff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0.25rem;
+        }
+
+        .pagination > .active > a,
+        .pagination > .active > a:focus,
+        .pagination > .active > a:hover,
+        .pagination > .active > span,
+        .pagination > .active > span:focus,
+        .pagination > .active > span:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .btn-create {
+            position: relative;
+            padding-left: 30px; /* Adjust based on the size of your icon */
+        }
+
+            .btn-create i {
+                position: absolute;
+                left: 10px; /* Adjust based on the size of your icon */
+                top: 50%; /* Center vertically */
+                transform: translateY(-50%); /* Fine-tune vertical alignment */
+                color: white; /* Ensure the icon color matches the button */
+            }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 class="display-4 mb-4">Posts</h1>
+        <a class="btn btn-primary btn-create" asp-action="Create">
+            <i class="fas fa-plus"></i> Add Post
+        </a>
+        <div class="scrollable-container">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-6 col-lg-4">
+                    <article class="post vt-post">
+                            <td>
+                                @if (item.Author.Image != null)
+                                {
+                                    <img src="data:image/jpeg;base64,@Convert.ToBase64String(item.Author.Image)" alt="User Image" class="img-thumbnail centered-image" style="max-width: 200px; max-height: 200px;" />
+                                }
+                                else
+                                {
+                                    <span style="font-style: italic;">No Image Available</span>
+                                }
+                            </td>
+                        <div class="author-info author-info-2">
+                            <ul class="list-inline">
+                                <li>
+                                    <div class="info">
+                                        <p>Posted on:</p>
+                                        <strong>@Html.DisplayFor(modelItem => item.CreatedAt)</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <p>Comments:</p>
+                                        <strong>@item.Comments.Count</strong>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                     
+                        <div class="caption">
+                            <h3 class="md-heading"><a href="#">@Html.DisplayFor(modelItem => item.Title)</a></h3>
+                          
+                            <div id="postContent_@item.PostId" class="post-content">
+                                <p>@Html.DisplayFor(modelItem => item.Content)</p>
+                            </div>
+                           
+                            <div class="d-flex justify-content-between align-items-center">
+                                <!-- Read More Button -->
+                                <a class="btn btn-default read-more-btn" href="#" role="button">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <div class="btn-group">
+                                    <!-- Details Button -->
+                                    <a class="btn btn-sm btn-info" asp-action="Details" asp-route-id="@item.PostId">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    @if (ViewBag.userId == item.AuthorId || ViewBag.isAdmin == true)
+                                    {
+                                        <!-- Edit Button -->
+                                        <a class="btn btn-sm btn-primary" asp-action="Edit" asp-route-id="@item.PostId">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </a>
+                                        <!-- Delete Button -->
+                                        <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.PostId">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+                                    }
+                                    <!-- See Comments Button -->
+                                    <a class="btn btn-sm btn-secondary" asp-controller="Comment" asp-action="Index" asp-route-postId="@item.PostId">
+                                        <i class="fas fa-comments"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            }
+         
+        </div>
+        </div>
+
+        <div class="d-flex justify-content-end mt-3">
+            <!-- Updated Add Post Button with Plus Icon -->
+        
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Initially hide all post contents
+            $('.post-content').hide();
+
+            // Function to determine button text based on content visibility
+            function setButtonText(postId) {
+                var $content = $('#' + postId);
+                var isVisible = $content.is(':visible');
+
+                if (isVisible) {
+                    // Content is visible, set button text to "Hide"
+                    $('.read-more-btn').text('Hide');
+                } else {
+                    // Content is hidden, set button text to "Read More"
+                    $('.read-more-btn').text('Read More');
+                }
+            }
+
+            // Toggle function for showing/hiding post content
+            $('.read-more-btn').click(function (e) {
+                e.preventDefault();
+                var postId = $(this).closest('.post').find('.post-content').attr('id');
+                $(`#${postId}`).toggle();
+                setButtonText(postId); // Update button text after toggling content
+            });
+
+            // Set initial button texts based on content visibility
+            $('.post-content').each(function () {
+                var postId = $(this).attr('id');
+                setButtonText(postId);
+            });
+        });
+    </script>
+</body>
+</html>

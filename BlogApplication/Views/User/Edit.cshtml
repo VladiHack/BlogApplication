@@ -1,0 +1,83 @@
+﻿@model BlogApplication.Models.User
+
+@{
+    ViewData["Title"] = "Edit";
+    var currentImage = ViewBag.CurrentImage as byte[];
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <h1 class="display-4 text-center mb-4">Edit</h1>
+            <h4 class="text-muted text-center mb-4">User</h4>
+            <hr class="my-4" />
+            <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="UserId" />
+                <div class="form-group">
+                    <label asp-for="Username" class="control-label text-muted"><span style="font-style: italic;">Username</span></label>
+                    <input asp-for="Username" class="form-control" />
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label text-muted"><span style="font-style: italic;">Password</span></label>
+                    <input asp-for="Password" type="password" class="form-control" value="@Model.Password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label text-muted"><span style="font-style: italic;">Email</span></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="UserImageFile" class="control-label"><span style="font-style: italic;">User Image</span></label>
+                    <input type="file" name="UserImageFile" class="form-control-file" onchange="previewImage(event)" />
+                    <span asp-validation-for="UserImageFile" class="text-danger"></span>
+                </div>
+                <div class="form-group text-center">
+                    @if (currentImage != null)
+                    {
+                        <img id="currentImage" src="data:image/jpeg;base64,@Convert.ToBase64String(currentImage)" alt="User Image" class="img-thumbnail" style="max-width: 200px; max-height: 200px;" />
+                    }
+                    else
+                    {
+                        <span style="font-style: italic;">No Image Available</span>
+                    }
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary btn-block" />
+                </div>
+            </form>
+        </div>
+    </div>
+    @if (!string.IsNullOrEmpty(ViewBag.Message))
+    {
+        <div class="alert alert-danger" role="alert">
+            @ViewBag.Message
+        </div>
+    }
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="text-center">
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        function previewImage(event) {
+            var reader = new FileReader();
+            reader.onload = function () {
+                var output = document.getElementById('currentImage');
+                output.src = reader.result;
+                output.style.display = "block";
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
+}
