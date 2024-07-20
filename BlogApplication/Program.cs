@@ -3,6 +3,7 @@ using BlogApplication.Services.Categories;
 using BlogApplication.Services.Comments;
 using BlogApplication.Services.Posts;
 using BlogApplication.Services.Users;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,13 @@ builder.Services.AddTransient<ICategoriesService, CategoriesService>();
 
 
 var app = builder.Build();
+
+using (var serviceScope = app.Services.CreateScope())
+{
+    var dbContext = serviceScope.ServiceProvider.GetRequiredService<BlogDbContext>();
+    dbContext.Database.Migrate();
+}
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

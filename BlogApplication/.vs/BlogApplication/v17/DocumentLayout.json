@@ -3,29 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\views\\post\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|solutionrelative:views\\post\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\models\\blogdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|solutionrelative:models\\blogdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4162510-F6D6-447C-8DC0-338A2DEBB60E}|..\\BlogApplication.Tests\\BlogApplication.Tests.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication.tests\\controller\\commentcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\services\\comments\\commentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|solutionrelative:services\\comments\\commentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|solutionrelative:models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|solutionrelative:controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4162510-F6D6-447C-8DC0-338A2DEBB60E}|..\\BlogApplication.Tests\\BlogApplication.Tests.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication.tests\\controller\\postcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\migrations\\20240720160857_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|solutionrelative:migrations\\20240720160857_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4162510-F6D6-447C-8DC0-338A2DEBB60E}|..\\BlogApplication.Tests\\BlogApplication.Tests.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication.tests\\controller\\usercontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4162510-F6D6-447C-8DC0-338A2DEBB60E}|..\\BlogApplication.Tests\\BlogApplication.Tests.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication.tests\\blogapplication.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4162510-F6D6-447C-8DC0-338A2DEBB60E}|..\\BlogApplication.Tests\\BlogApplication.Tests.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication.tests\\controller\\categorycontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\validators\\postvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|solutionrelative:validators\\postvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4162510-F6D6-447C-8DC0-338A2DEBB60E}|..\\BlogApplication.Tests\\BlogApplication.Tests.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication.tests\\controller\\commentcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\services\\posts\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -40,14 +55,6 @@
       "RelativeMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|solutionrelative:controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\validators\\postvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|solutionrelative:validators\\postvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\services\\posts\\ipostsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|solutionrelative:services\\posts\\ipostsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -58,9 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\validators\\categoryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|solutionrelative:validators\\categoryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4162510-F6D6-447C-8DC0-338A2DEBB60E}|..\\BlogApplication.Tests\\BlogApplication.Tests.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication.tests\\controller\\categorycontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8FA79A7B-F55C-440E-860E-2370FF6EE2CD}|BlogApplication.csproj|c:\\users\\vladimir boychev\\desktop\\blogapplication\\blogapplication\\services\\users\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 157,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,80 +98,92 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Views\\Post\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Post\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Views\\Post\\Create.cshtml",
-              "RelativeToolTip": "Views\\Post\\Create.cshtml",
+              "DocumentIndex": 2,
+              "Title": "20240720160857_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Migrations\\20240720160857_Initial.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240720160857_Initial.cs",
+              "ToolTip": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Migrations\\20240720160857_Initial.cs",
+              "RelativeToolTip": "Migrations\\20240720160857_Initial.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAiwJUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T16:08:58.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-19T05:39:31.562Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T06:29:16.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BlogApplication.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication.Tests\\BlogApplication.Tests.csproj",
+              "RelativeDocumentMoniker": "..\\BlogApplication.Tests\\BlogApplication.Tests.csproj",
+              "ToolTip": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication.Tests\\BlogApplication.Tests.csproj",
+              "RelativeToolTip": "..\\BlogApplication.Tests\\BlogApplication.Tests.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-19T06:28:56.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlogDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Models\\BlogDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\BlogDbContext.cs",
+              "ToolTip": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Models\\BlogDbContext.cs",
+              "RelativeToolTip": "Models\\BlogDbContext.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAACMAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T06:28:32.381Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CommentsService.cs",
-              "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Services\\Comments\\CommentsService.cs",
-              "RelativeDocumentMoniker": "Services\\Comments\\CommentsService.cs",
-              "ToolTip": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Services\\Comments\\CommentsService.cs",
-              "RelativeToolTip": "Services\\Comments\\CommentsService.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAADwvzIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T05:28:35.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Comment.cs",
-              "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Models\\Comment.cs",
-              "RelativeDocumentMoniker": "Models\\Comment.cs",
-              "ToolTip": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Models\\Comment.cs",
-              "RelativeToolTip": "Models\\Comment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T05:28:26.561Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CommentController.cs",
-              "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Controllers\\CommentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CommentController.cs",
-              "ToolTip": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Controllers\\CommentController.cs",
-              "RelativeToolTip": "Controllers\\CommentController.cs",
-              "ViewState": "AQIAAI8AAAAAAAAAAAAAAKMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T05:28:20.791Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "PostControllerTest.cs",
-              "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication.Tests\\Controller\\PostControllerTest.cs",
-              "RelativeDocumentMoniker": "..\\BlogApplication.Tests\\Controller\\PostControllerTest.cs",
-              "ToolTip": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication.Tests\\Controller\\PostControllerTest.cs",
-              "RelativeToolTip": "..\\BlogApplication.Tests\\Controller\\PostControllerTest.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAuwGwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T05:18:16.689Z"
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-19T06:28:26.589Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAmwBgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T06:24:28.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "PostValidator.cs",
               "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Validators\\PostValidator.cs",
               "RelativeDocumentMoniker": "Validators\\PostValidator.cs",
               "ToolTip": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Validators\\PostValidator.cs",
               "RelativeToolTip": "Validators\\PostValidator.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAABAAAABEAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABAAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-18T14:23:52.621Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "CategoryValidator.cs",
               "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Validators\\CategoryValidator.cs",
               "RelativeDocumentMoniker": "Validators\\CategoryValidator.cs",
@@ -179,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Post.cs",
               "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Models\\Post.cs",
               "RelativeDocumentMoniker": "Models\\Post.cs",
@@ -191,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Services\\Users\\UserService.cs",
               "RelativeDocumentMoniker": "Services\\Users\\UserService.cs",
@@ -203,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "PostService.cs",
               "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Services\\Posts\\PostService.cs",
               "RelativeDocumentMoniker": "Services\\Posts\\PostService.cs",
@@ -215,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "IPostsService.cs",
               "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Services\\Posts\\IPostsService.cs",
               "RelativeDocumentMoniker": "Services\\Posts\\IPostsService.cs",
@@ -227,19 +243,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAPAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAgAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-18T14:07:42.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
@@ -251,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "PostController.cs",
               "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Controllers\\PostController.cs",
               "RelativeDocumentMoniker": "Controllers\\PostController.cs",
@@ -263,19 +279,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "UserControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication.Tests\\Controller\\UserControllerTest.cs",
               "RelativeDocumentMoniker": "..\\BlogApplication.Tests\\Controller\\UserControllerTest.cs",
               "ToolTip": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication.Tests\\Controller\\UserControllerTest.cs",
               "RelativeToolTip": "..\\BlogApplication.Tests\\Controller\\UserControllerTest.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAmwDgAAAADAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAADgAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-18T13:29:43.901Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "ICategoriesService.cs",
               "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Services\\Categories\\ICategoriesService.cs",
               "RelativeDocumentMoniker": "Services\\Categories\\ICategoriesService.cs",
@@ -287,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "CategoriesService.cs",
               "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication\\Services\\Categories\\CategoriesService.cs",
               "RelativeDocumentMoniker": "Services\\Categories\\CategoriesService.cs",
@@ -299,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "CommentControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication.Tests\\Controller\\CommentControllerTest.cs",
               "RelativeDocumentMoniker": "..\\BlogApplication.Tests\\Controller\\CommentControllerTest.cs",
@@ -311,13 +327,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 8,
               "Title": "CategoryControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication.Tests\\Controller\\CategoryControllerTest.cs",
               "RelativeDocumentMoniker": "..\\BlogApplication.Tests\\Controller\\CategoryControllerTest.cs",
               "ToolTip": "C:\\Users\\Vladimir Boychev\\Desktop\\BlogApplication\\BlogApplication.Tests\\Controller\\CategoryControllerTest.cs",
               "RelativeToolTip": "..\\BlogApplication.Tests\\Controller\\CategoryControllerTest.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABYAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-18T13:24:24.673Z"
             }
